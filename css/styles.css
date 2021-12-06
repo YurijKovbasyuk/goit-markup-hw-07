@@ -11,7 +11,7 @@
 
   --oolor-border: #ececec;
   --color-svg: #afb1b8;
-  --transition-d-time: 250ms;
+  --transition-d-time: 1250ms;
   --transition-t-f-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
@@ -87,28 +87,35 @@ img {
   border-bottom: 1px solid #ececec;
 }
 .logo {
-  margin-right: 93px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: #2196f3;
 }
-.logo-header {
-  color: #000000;
+
+.logo__header {
+  margin-right: 93px;
   transition-property: color;
   transition-duration: var(--transition-d-time);
   transition-timing-function: var(--transition-t-f-cubic);
 }
-.logo-header:hover,
-.logo-header:focus {
+.logo--black-text {
+  color: #000000;
+}
+.logo__header:hover,
+.logo__header:focus {
   color: var(--color-hoverfocus);
 }
 /* навигация */
-.navigation-item {
+.navigation {
+  align-items: center;
+  margin-left: auto;
+}
+.navigation__item {
   position: relative;
 }
-.navigation-link {
+.navigation__link {
   display: block;
   padding: 32px 0px;
   font-weight: 500;
@@ -120,11 +127,11 @@ img {
   transition-duration: var(--transition-d-time);
   transition-timing-function: var(--transition-t-f-cubic);
 }
-.navigation-link:focus,
-.navigation-link:hover {
+.navigation__link:focus,
+.navigation__link:hover {
   color: var(--color-hoverfocus);
 }
-.current::after {
+.navigation__link--current::after {
   position: absolute;
   bottom: -1%;
   content: '';
@@ -134,27 +141,26 @@ img {
   border-radius: 2px;
   background-color: var(--color-hoverfocus);
 }
-.header-flex {
+.header--flex {
   display: flex;
   align-items: center;
 }
-.current {
+.navigation__link--current {
   color: var(--color-hoverfocus);
 }
 
 /* контакты */
-.contakttel {
+
+.contakt {
   align-items: center;
   margin-left: auto;
 }
-.contakt-item:not(:last-child),
-.navigation-item:not(:last-child) {
+.contakt__item:not(:last-child),
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
-.logo {
-  align-items: center;
-}
-.contakt {
+
+.contakt__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,23 +176,16 @@ img {
   transition-timing-function: var(--transition-t-f-cubic);
 }
 
-.contakt:hover,
-.contakt:focus {
+.contakt__link:hover,
+.contakt__link:focus {
   color: var(--color-hoverfocus);
 }
 
-.contakt-icon-mail {
-  width: 16px;
-  height: 12px;
+.contakt__icon {
   margin-right: 10px;
   fill: currentColor;
 }
-.contakt-icon-tel {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-}
+
 /* --  секция герой  -- */
 
 .hero {
@@ -575,23 +574,20 @@ img {
   display: flex;
   align-items: baseline;
 }
-.logo-foot {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: #2196f3;
-  display: block;
+
+.logo__footer {
   margin-bottom: 20px;
-}
-.logo-footer {
-  color: var(--color-white);
+  display: inline-block;
+
   transition-property: color;
   transition-duration: var(--transition-d-time);
   transition-timing-function: var(--transition-t-f-cubic);
 }
-.logo-footer:hover,
-.logo-footer:focus {
+.logo--white-text {
+  color: var(--color-white);
+}
+.logo__footer:hover,
+.logo__footer:focus {
   color: var(--color-hoverfocus);
 }
 .footer-list:first-child {
