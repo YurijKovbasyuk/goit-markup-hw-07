@@ -95,7 +95,7 @@ img {
   border-radius: 50%;
   border: none;
   transition-property: color, background-color;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -122,15 +122,6 @@ img {
   fill: #ffffff;
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
-.header--flex {
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -142,7 +133,7 @@ img {
 .logo__header {
   margin-right: 93px;
   transition-property: color;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -152,6 +143,15 @@ img {
 
 .logo--black-text {
   color: #000000;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header--flex {
+  display: flex;
+  align-items: center;
 }
 
 .navigation {
@@ -172,7 +172,7 @@ img {
   letter-spacing: 0.02em;
   color: #212121;
   transition-property: color;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -217,7 +217,7 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
   transition-property: color;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -266,7 +266,7 @@ img {
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition-property: background-color;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -450,7 +450,7 @@ img {
   width: 100%;
   height: 100%;
   transition-property: fill, border-color;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -493,7 +493,7 @@ img {
   border: 0px;
   border-radius: 4px;
   transition-property: color, background-color, box-shadow;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -550,7 +550,7 @@ img {
 .projekt__link {
   overflow: hidden;
   transition-property: box-shadow;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -594,7 +594,7 @@ img {
   line-height: 1.56;
   overflow: auto;
   transform: translateY(100%);
-  transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -612,7 +612,7 @@ img {
   margin-bottom: 20px;
   display: inline-block;
   transition-property: color;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -635,7 +635,7 @@ img {
 
 .address__link {
   color: #ffffff;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -650,7 +650,7 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
   transition-property: color;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -717,7 +717,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition-property: background-color;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -748,11 +748,10 @@ img {
   pointer-events: none;
 }
 
-.backdrop.is-hidden .backdrop.is-hidden
-.modal {
-  transform: rotate(180deg);
+.backdrop.is-hidden .modal {
+  transform: rotate(120deg);
   width: 0;
-  height: 200%;
+  height: 10%;
 }
 
 .modal__button-close {
@@ -769,7 +768,7 @@ img {
   align-items: center;
   justify-content: center;
   transition-property: fill;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -779,12 +778,9 @@ img {
 }
 
 .modal {
-  transition-property: transform, width, height;
-  transition-duration: 1250ms;
+  transition-property: rotate, transform, width, height;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
-  transform: rotate(180deg);
-  position: relative;
   width: 528px;
   height: 581px;
   padding: 40px;
@@ -834,7 +830,7 @@ img {
   width: 18px;
   height: 18px;
   transition-property: fill;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -846,7 +842,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   transition-property: border-color;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -879,7 +875,7 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   transition-property: border;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -931,7 +927,7 @@ textarea:focus {
   background-size: contain;
   background-origin: border-box;
   transition-property: fill, background, border;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -984,7 +980,7 @@ textarea:focus {
   background: #2196f3;
   border-radius: 4px;
   transition-property: background-color, box-shadow;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
