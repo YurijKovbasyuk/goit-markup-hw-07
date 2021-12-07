@@ -1,4 +1,14 @@
-@import './utils/vars';
-@import './base/reset';
-@import './layout/header';
-@import './layout/hero';
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./components/reset";
+@import "./components/social";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/quality";
+@import "./layout/ourwork";
+@import "./layout/ourcommand";
+@import "./layout/clients";
+@import "./layout/projekt";
+@import "./layout/footer";
+@import "./components/modal";

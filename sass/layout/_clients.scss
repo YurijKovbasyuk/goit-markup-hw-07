@@ -1,0 +1,38 @@
+.clients {
+  display: flex;
+}
+.container__title {
+  @include title-text;
+}
+
+.clients__item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients__item + .clients__item {
+  margin-left: 30px;
+}
+
+.clients__link {
+  display: flex;
+  fill: #afb1b8;
+  border: 1px solid $--color-svg;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition-property: fill, border-color;
+  @include transition;
+
+  &:hover,
+  &:focus {
+    fill: $--color-hoverfocus;
+    border-color: $--color-hoverfocus;
+  }
+}
+.clients__icon {
+  height: 60px;
+  width: 106px;
+}
