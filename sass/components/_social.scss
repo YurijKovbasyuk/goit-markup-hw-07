@@ -5,10 +5,11 @@
 .social__item {
   width: 44px;
   height: 44px;
+  & + .social__item {
+    margin-left: 10px;
+  }
 }
-.social__item + .social__item {
-  margin-left: 10px;
-}
+
 .social__link {
   display: flex;
   width: 100%;
@@ -16,16 +17,16 @@
 
   align-items: center;
   justify-content: center;
-  color: $--color-svg;
+  color: $color-svg;
   border-radius: 50%;
   border: none;
   transition-property: color, background-color;
-  transition-duration: $--transition-d-time;
-  transition-timing-function: $--transition-t-f-cubic;
+  transition-duration: $transition-d-time;
+  transition-timing-function: $transition-t-f-cubic;
   &:focus,
   &:hover {
-    background-color: $--color-hoverfocus;
-    color: $--color-white;
+    background-color: $color-hoverfocus;
+    color: $color-white;
     border: none;
   }
 }
@@ -41,5 +42,5 @@
 }
 
 .social__svg--color-in-footer {
-  fill: $--color-white;
+  fill: $color-white;
 }

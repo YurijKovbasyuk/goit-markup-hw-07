@@ -1,4 +1,4 @@
-.container__title--visually-hidden {
+.section__title--visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -40,5 +40,5 @@
 }
 .quality__text {
   line-height: 1.71;
-  color: $--color-paragraf;
+  color: $color-paragraf;
 }

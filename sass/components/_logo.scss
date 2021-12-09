@@ -10,7 +10,7 @@
     @include transition;
     &:hover,
     &:focus {
-      color: $--color-hoverfocus;
+      color: $color-hoverfocus;
     }
   }
   &--black-text {

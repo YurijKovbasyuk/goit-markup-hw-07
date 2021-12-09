@@ -2,11 +2,11 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  color: var(--color-heding);
+  color: $color-heding;
   margin-bottom: 50px;
   text-align: center;
 }
 @mixin transition {
-  transition-duration: $--transition-d-time;
-  transition-timing-function: $--transition-t-f-cubic;
+  transition-duration: $transition-d-time;
+  transition-timing-function: $transition-t-f-cubic;
 }

@@ -8,16 +8,15 @@
 .clients__item {
   width: 170px;
   height: 92px;
-}
-
-.clients__item + .clients__item {
-  margin-left: 30px;
+  & + .clients__item {
+    margin-left: 30px;
+  }
 }
 
 .clients__link {
   display: flex;
   fill: #afb1b8;
-  border: 1px solid $--color-svg;
+  border: 1px solid $color-svg;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
@@ -28,8 +27,8 @@
 
   &:hover,
   &:focus {
-    fill: $--color-hoverfocus;
-    border-color: $--color-hoverfocus;
+    fill: $color-hoverfocus;
+    border-color: $color-hoverfocus;
   }
 }
 .clients__icon {
